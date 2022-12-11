@@ -27,7 +27,7 @@
 template <class... T> inline void UNUSED(const T &...) {}
 
 template <class T> inline void doNotOptimizeAway(T &&d) {
-  asm volatile("" : "+r"(d));
+  //asm volatile("" : "+r"(d));
 }
 
 #if defined(WITH_BOOST)
